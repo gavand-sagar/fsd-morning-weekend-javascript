@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="username">
+    <button onclick="checkUsernameValid()">Login</button>
+
+    <script>
+        function isEmpty(username) {
+            if (username == '') {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function isUserAdmin(username) {
+            if (username == 'admin' || username == 'Admin') {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function checkUsernameValid() {
+            let usernameInput = document.getElementById('username')
+            let username = usernameInput.value;
+
+            let result1 = isEmpty(username);
+            if (result1 == true) {
+                alert('Empty')
+            }
+
+            let result2 = isUserAdmin(username);
+           
+            if (result2 == true) {
+                alert('Admin is not valid')
+            }else{
+                alert('Valid User')
+            }
+            
+        }
+
+
+    </script>
+</body>
+
+</html>

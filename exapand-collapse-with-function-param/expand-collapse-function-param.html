@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 1px solid gray;
+            padding: 10px;
+            border: 1px solid pink;
+        }
+
+        .circle {
+            border: 1px solid pink;
+            display: inline-block;
+            color: pink;
+            height: 1.5rem;
+            width: 1.5rem;
+            border-radius: 50%;
+            float: right;
+        }
+
+        .heading {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container">
+        <div class="header">
+            <div class="heading"></div>
+            <div class="actions"></div>
+        </div>
+        <div class="body"></div>
+    </div> -->
+
+
+    <div class="container">
+        <span class="heading">Heading Annd djd djd?</span>
+        <button class="circle" onclick="showDiv('body','show-button','hide-button')" id="show-button">
+            +
+        </button>
+        <button class="circle" onclick="hideDiv('body','hide-button','show-button')" id="hide-button">
+            -
+        </button>
+
+        <div id="body">
+            asjdklfj klsadjf lksdjfkljsdaklfjklsadjf klajsdf
+            <br>
+            asjdklfj klsadjf lksdjfkljsdaklfjklsadjf klajsdf
+            <br>
+            asjdklfj klsadjf lksdjfkljsdaklfjklsadjf klajsdf
+            <br>
+        </div>
+    </div>
+
+    <br><br>
+    <div class="container">
+        <span class="heading">Heading Annd djd djd?</span>
+        <button class="circle" onclick="showDiv('body2','show-button2','hide-button2')" id="show-button2">
+            +
+        </button>
+        <button class="circle" onclick="hideDiv('body2','hide-button2','show-button2')" id="hide-button2">
+            -
+        </button>
+
+        <div id="body2">
+            asjdklfj klsadjf lksdjfkljsdaklfjklsadjf klajsdf
+            <br>
+            asjdklfj klsadjf lksdjfkljsdaklfjklsadjf klajsdf
+            <br>
+            asjdklfj klsadjf lksdjfkljsdaklfjklsadjf klajsdf
+            <br>
+        </div>
+    </div>
+
+
+
+    <br><br>
+    <div class="container">
+        <span class="heading">Heading Annd djd djd?</span>
+        <button class="circle" onclick="showDiv('body3','show-button3','hide-button3')" id="show-button3">
+            +
+        </button>
+        <button class="circle" onclick="hideDiv('body3','hide-button3','show-button3')" id="hide-button3">
+            -
+        </button>
+
+        <div id="body3">
+            asjdklfj klsadjf lksdjfkljsdaklfjklsadjf klajsdf
+            <br>
+            asjdklfj klsadjf lksdjfkljsdaklfjklsadjf klajsdf
+            <br>
+            asjdklfj klsadjf lksdjfkljsdaklfjklsadjf klajsdf
+            <br>
+        </div>
+    </div>
+
+
+    <script>
+        //hiding plus button
+        let showButton = document.getElementById('show-button')
+        showButton.style.display = 'none'
+
+
+
+        function showDiv(value1, button1, button2) {
+            let bodyDiv = document.getElementById(value1)
+            bodyDiv.style.display = 'block'
+
+            // hide plus button
+            let showButton = document.getElementById(button1)
+            showButton.style.display = 'none'
+
+            // show minus button
+            let hideButton = document.getElementById(button2)
+            hideButton.style.display = 'inline-block'
+
+        }
+
+
+        function hideDiv(value1, button1, button2) {
+            let bodyDiv = document.getElementById(value1)
+            bodyDiv.style.display = 'none';
+
+
+            //hide minus button
+            let hideButton = document.getElementById(button1)
+            hideButton.style.display = 'none'
+
+            //show plus
+            let showButton = document.getElementById(button2)
+            showButton.style.display = 'inline-block'
+        }
+    </script>
+
+</body>
+
+</html>

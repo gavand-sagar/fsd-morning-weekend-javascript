@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            height: 70px;
+            align-items: center;
+
+
+            border: 1px solid black;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="doSomething()">Click Here</button>
+    <div id="output"></div>
+
+    <script>
+
+
+        // let fruitsArray = ['apple', 'mango', 'banana']
+
+        // for (const fruit of fruitsArray) {
+
+        //     document.write(fruit)
+        // }
+
+        // // creation of object
+        // let mobile1 = {
+        //     brand: "Samsung",
+        //     model: 'Galaxy',
+        //     price: 'Rs.21321'
+        // };
+
+        // let mobile2 = {
+        //     brand: "Samsung",
+        //     model: 'Galaxy',
+        //     price: 'Rs.21321'
+        // };
+
+        // document.write(mobile1.brand)
+        // document.write('<br>')
+        // document.write(mobile1.model)
+        // document.write('<br>')
+        // document.write(mobile1.price)
+
+
+        // its not a database but we can relate it like that only
+        let songsArray = [
+            { img: 'front-back.jpg', songName: 'Vibe', rating: 3 },
+            { img: 'front.jpg', songName: 'My Truck', rating: 2 },
+            { img: 'back.jpg', songName: 'Moral of the story', rating: 4 },
+            { img: 'sides.jpg', songName: 'Apollo', rating: 1 },
+        ]
+
+        function doSomething() {
+            let output = document.getElementById('output')
+            for (const songRef of songsArray) {
+
+                let stars = "&#9733;".repeat(songRef.rating);
+
+                output.innerHTML +=
+                    `<div class="container">
+                        <img height='50px' src='${songRef.img}'>
+                        <span>
+                            ${songRef.songName} 
+                        </span>
+                        <span>
+                            ${stars}
+                        </span>                        
+                    </div>`
+
+
+               
+
+            }
+        }
+
+
+        doSomething()
+
+    </script>
+</body>
+
+</html>

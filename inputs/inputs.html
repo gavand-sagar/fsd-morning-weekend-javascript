@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="txtContent" placeholder="Content">    
+    <input type="color" id="txtColor" placeholder="Color">
+    <input type="text" id="txtFontSize" placeholder="Type font size">
+    <button onclick="showAlert()">Add</button>
+
+
+    <div id="container"></div>
+
+    <script>
+        function showAlert() {
+
+            let contentInput = document.getElementById('txtContent');
+            let colorInput = document.getElementById('txtColor');
+            let fontSizeInput = document.getElementById('txtFontSize');
+
+            let div = document.getElementById('container');
+
+            div.innerHTML = contentInput.value;
+
+            div.style.color = colorInput.value;
+            div.style.fontSize = fontSizeInput.value;
+
+
+        }
+    </script>
+
+</body>
+
+</html>

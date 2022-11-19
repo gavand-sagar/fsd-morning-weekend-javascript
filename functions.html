@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .red{
+            color:red;
+        }
+        .blue{
+            color: blue;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <button onclick="addMyName()">Add Sagar</button>
+
+    <button onclick="addAnshuName()">Add Anshu</button>
+
+    <div id="my-div-1">
+        Hello
+    </div>
+
+    <!-- <div id="my-div-2">
+        footer
+    </div> -->
+
+    <script>
+
+        function addMyName() {
+            // document.getElementById('my-div-1').innerHTML += 'My content';
+            document.getElementById('my-div-1').innerHTML += '<div class="red">Sagar</div>'
+            alert();
+        }
+
+        function addAnshuName() {
+            document.getElementById('my-div-1').innerHTML += '<div class="blue">Anshu</div>'
+        }
+
+
+        // document.write('My content')
+
+        //describing the body // what to do when you call me
+        // function addMessage() {
+
+        //     let previousValue = document.body.innerHTML;
+
+
+
+        // }
+
+        // //executing a function body
+        // addMessage()
+        // addMessage()
+
+    </script>
+</body>
+
+</html>

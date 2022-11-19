@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="addContent('Sagar','red','50px')">Red - Sagar</button>
+    <button onclick="addContent('Anshu','red')">Red - Anshu</button>
+    <button onclick="addContent('Sagar','blue')">Blue - Sagar</button>
+    <button onclick="addContent('Shubhi','green','5px')">Green - Shubhi</button>
+    <button onclick="addContent('Anuj','orange')">Orange - Anuj</button>
+
+    <button onclick="addContent('Hemant')">Yellow - Hemant</button>
+
+    <!-- <button>Add Padding1</button>
+    <button>Add Padding2</button> -->
+
+    <div id="anything"></div>
+
+    <script>
+        function addContent(content, value2, value3) {
+
+            let div = document.getElementById('anything');
+            //default setting
+            div.innerHTML = '';
+            div.style.color = 'black';
+            div.style.fontSize = '14px';
+
+            // try to add the passed values
+            div.innerHTML = content;
+            div.style.color = value2;
+            div.style.fontSize = value3
+        }
+    </script>
+</body>
+
+</html>

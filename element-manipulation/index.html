@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button>Width 100px</button>
+    <button>Width 200px</button>
+    <button>Width 300px</button>
+
+    <button onclick="changeHeightTo100Px()">Height 100px</button>
+    <button onclick="changeHeightTo200px()">Height 200px</button>
+    <button>Height 300px</button>
+
+    <button onclick="changeBackgroundColorToRed()">Background Red</button>
+    <button onclick="changeBackgroundColorToBlue()">Background Blue</button>
+    <button>Background Green</button>
+
+    
+    <button>Replace Content To Sagar</button>
+    
+    <button onclick="height100andBlue()"> Height 100 and Blue</button>
+    <div>
+        Welcome
+    </div>
+
+    <div id="div-1">
+        Div 1
+    </div>
+
+    <div id="div-2">
+        Div 2
+    </div>
+
+
+    <script>
+        function changeBackgroundColorToRed(){
+            let div1 = document.getElementById('div-1');
+            div1.style.backgroundColor = 'red';
+        }
+
+        function changeBackgroundColorToBlue(){
+            let div1 = document.getElementById('div-1')
+            div1.style.backgroundColor = 'blue'
+        }
+
+        function changeHeightTo100Px(){
+            let div1 = document.getElementById('div-1');
+            div1.style.height = '100px'
+        }
+
+        function changeHeightTo200px(){
+            let div1 = document.getElementById('div-1');
+            div1.style.height = '200px'
+        }
+
+        function height100andBlue(){
+            changeHeightTo100Px();
+            changeBackgroundColorToBlue();
+        }
+    </script>
+
+</body>
+
+</html>

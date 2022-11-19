@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+.tab-container {
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+.tab-header {
+    /* background-color: rgb(177, 175, 173); */
+}
+
+.tab-body {
+    padding-top: 10px;
+    /* background-color: rgb(156, 155, 154); */
+}
+
+.tab-header button {
+    border: 0;
+    display: inline-block;
+}  

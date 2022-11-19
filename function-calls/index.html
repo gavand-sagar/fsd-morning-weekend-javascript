@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="addSagar()">Add Sagar</button>
+    <button onclick="addAnshu()">Add Anshu</button>
+
+    <button onclick="addBoth()">Add Both</button>
+
+    <div id="content-div">Content</div>
+
+    <div id="about-div">About </div>
+
+
+    <script>
+        function addSagar() {
+            //creating a reference of an element (in this case its div)
+            // let contentDiv = document.getElementById('content-div');
+            // contentDiv.innerHTML = contentDiv.innerHTML + `<div>Sagar</div>`;
+            let aboutDiv = document.getElementById('about-div');
+            aboutDiv.innerHTML = aboutDiv.innerHTML + `<div><img width="100px" src="m1.jpg"></div>`
+        }
+
+        function addAnshu() {
+            let div = document.getElementById('content-div');
+            div.innerHTML = div.innerHTML + `<div>Anshu</div>`
+        }
+
+
+        function addBoth() {
+            addAnshu();
+            addSagar();
+        }
+
+
+    </script>
+</body>
+
+</html>

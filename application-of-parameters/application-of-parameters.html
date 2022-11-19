@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="hidePara('para-1')">Panel-1</button>
+    <p id="para-1">
+        PARA 1 PARA 1PARA 1PARA 1PARA 1PARA 1PARA 1PARA 1
+    </p>
+
+    <hr>
+
+    <button onclick="hidePara('para-2')">Panel-2</button>
+    <p id="para-2">
+        PARA 2222
+        PARA 2222
+        PARA 2222PARA 2222PARA 2222PARA 2222PARA 2222
+    </p>
+
+    <hr>
+    <div id="sagar">
+        sagar sagar sagar sagar sagar sagar
+    </div>
+
+    <script>
+        function hidePara(value) {
+            let para = document.getElementById(value);
+            para.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="input">
+    <button onclick="doSomething()">Do Something</button>
+    <div id="output"></div>
+    <script>
+        let output = document.getElementById('output')
+
+        function doSomething() {
+            output.innerHTML = ''
+
+            let name = document.getElementById('input').value;
+            // let valueToCheck = 'Is'
+
+            for (let i = 0; i < name.length; i++) {
+                output.innerHTML += "Sagar"
+            }
+
+            // let result = name.replace('is','$');
+            // let result = name.replaceAll('is', '$');
+
+            // let result = name.replaceAll(' ','')
+
+            // for (let i = 0; i < result.length; i++) {
+            //     output.innerHTML += result.charAt(i) + '<br>'
+            // }
+
+
+            // let nameInLower = name.toLowerCase();
+            // let valueInLower = valueToCheck.toLowerCase();
+            // let result = name.includes(valueToCheck);
+
+            // output.innerHTML = result;
+
+
+            // let result = name;
+
+            // let result = name.toLowerCase();
+
+            // let result = name.toUpperCase();
+
+            // let result = name.charAt(11);
+
+            // let result = name.slice(4);
+
+            // let result = name.slice(4,7);
+
+            //let result = name.slice(3,10)
+
+
+        }
+    </script>
+</body>
+
+</html>
